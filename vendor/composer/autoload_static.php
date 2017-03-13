@@ -4,16 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7864b953c22eb342de4ec016ced7d4cf
+class ComposerStaticInit6c8d1db8fb36fa69fe56bcac867d17c0
 {
     public static $fallbackDirsPsr4 = array (
         0 => __DIR__ . '/../..' . '/lib',
     );
 
     public static $classMap = array (
-        'ComposerAutoloaderInit7864b953c22eb342de4ec016ced7d4cf' => __DIR__ . '/..' . '/composer/autoload_real.php',
-        'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
-        'Composer\\Autoload\\ComposerStaticInit7864b953c22eb342de4ec016ced7d4cf' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'LiveScores\\Lib\\CricketLiveScores' => __DIR__ . '/../..' . '/lib/CricketLiveScores.php',
         'LiveScores\\Lib\\CricketNews' => __DIR__ . '/../..' . '/lib/CricketNews.php',
         'LiveScores\\Lib\\Parser' => __DIR__ . '/../..' . '/lib/Parser.php',
@@ -27,7 +24,6 @@ class ComposerStaticInit7864b953c22eb342de4ec016ced7d4cf
         'Symfony\\Component\\Yaml\\Exception\\RuntimeException' => __DIR__ . '/..' . '/yaml/Exception/RuntimeException.php',
         'Symfony\\Component\\Yaml\\Inline' => __DIR__ . '/..' . '/yaml/Inline.php',
         'Symfony\\Component\\Yaml\\Parser' => __DIR__ . '/..' . '/yaml/Parser.php',
-        'Symfony\\Component\\Yaml\\Tag\\TaggedValue' => __DIR__ . '/..' . '/yaml/Tag/TaggedValue.php',
         'Symfony\\Component\\Yaml\\Tests\\A' => __DIR__ . '/..' . '/yaml/Tests/DumperTest.php',
         'Symfony\\Component\\Yaml\\Tests\\B' => __DIR__ . '/..' . '/yaml/Tests/ParserTest.php',
         'Symfony\\Component\\Yaml\\Tests\\Command\\LintCommandTest' => __DIR__ . '/..' . '/yaml/Tests/Command/LintCommandTest.php',
@@ -43,8 +39,8 @@ class ComposerStaticInit7864b953c22eb342de4ec016ced7d4cf
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInit7864b953c22eb342de4ec016ced7d4cf::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInit7864b953c22eb342de4ec016ced7d4cf::$classMap;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit6c8d1db8fb36fa69fe56bcac867d17c0::$fallbackDirsPsr4;
+            $loader->classMap = ComposerStaticInit6c8d1db8fb36fa69fe56bcac867d17c0::$classMap;
 
         }, null, ClassLoader::class);
     }

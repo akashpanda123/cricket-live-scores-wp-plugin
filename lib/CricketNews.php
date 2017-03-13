@@ -13,8 +13,7 @@ class CricketNews
 	}
 
 	public function fetchNewsByUrl($url) {
-		$parsedData = Parser::parseXmlUrl($url);
-		//print_r($parsedData);die;
+		$parsedData = \LiveScores\Lib\Parser::parseXmlUrl($url);
 		return $this->generateTemplate($parsedData);
 	}
 

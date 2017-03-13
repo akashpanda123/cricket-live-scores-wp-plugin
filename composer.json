@@ -25,7 +25,7 @@
                         "source": {
                                 "url": "https://github.com/symfony/yaml.git",
                                 "type": "git",
-                                "reference": "origin/master"
+                                "reference": "refs/tags/v3.2.6"
                         }
                 }
         }

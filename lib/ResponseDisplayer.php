@@ -6,13 +6,14 @@ class ResponseDisplayer
 	//private $viewYmlFileForTemplates;
 
 	public function display($page , $response) {
-		$allCssAndJs = $this->fetchStyleSheetsAndJavascripts($page);
-		echo $this->generateStylesheets($allCssAndJs['stylesheets']).$response.$this->generateJavascripts($allCssAndJs['javascripts']);
+		//$allCssAndJs = $this->fetchStyleSheetsAndJavascripts($page);
+		//echo $this->generateStylesheets($allCssAndJs['stylesheets']).$response.$this->generateJavascripts($allCssAndJs['javascripts']);
+		echo $response;
 	}
 
 	private function generateStylesheets($stylesheets) {
 		foreach ($stylesheets as $key => $value) {
-			$code .= "<link href='".$value."'  rel='stylesheet' />";
+			$code .= "<link href='".\plugins_url("cricket-live-scores-wp-plugin/".$value)."'  rel='stylesheet' />";
 		}
 		return $code;
 	}

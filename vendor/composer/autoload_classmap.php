@@ -6,9 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ComposerAutoloaderInit7864b953c22eb342de4ec016ced7d4cf' => $vendorDir . '/composer/autoload_real.php',
-    'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Composer\\Autoload\\ComposerStaticInit7864b953c22eb342de4ec016ced7d4cf' => $vendorDir . '/composer/autoload_static.php',
     'LiveScores\\Lib\\CricketLiveScores' => $baseDir . '/lib/CricketLiveScores.php',
     'LiveScores\\Lib\\CricketNews' => $baseDir . '/lib/CricketNews.php',
     'LiveScores\\Lib\\Parser' => $baseDir . '/lib/Parser.php',
@@ -22,7 +19,6 @@ return array(
     'Symfony\\Component\\Yaml\\Exception\\RuntimeException' => $vendorDir . '/yaml/Exception/RuntimeException.php',
     'Symfony\\Component\\Yaml\\Inline' => $vendorDir . '/yaml/Inline.php',
     'Symfony\\Component\\Yaml\\Parser' => $vendorDir . '/yaml/Parser.php',
-    'Symfony\\Component\\Yaml\\Tag\\TaggedValue' => $vendorDir . '/yaml/Tag/TaggedValue.php',
     'Symfony\\Component\\Yaml\\Tests\\A' => $vendorDir . '/yaml/Tests/DumperTest.php',
     'Symfony\\Component\\Yaml\\Tests\\B' => $vendorDir . '/yaml/Tests/ParserTest.php',
     'Symfony\\Component\\Yaml\\Tests\\Command\\LintCommandTest' => $vendorDir . '/yaml/Tests/Command/LintCommandTest.php',

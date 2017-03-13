@@ -6,7 +6,7 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
-            "reference": "origin/master"
+            "reference": "refs/tags/v3.2.6"
         },
         "type": "library",
         "installation-source": "source"

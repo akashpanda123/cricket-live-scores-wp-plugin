@@ -10,6 +10,7 @@ add_action("wp_enqueue_scripts" , "ap_ls_add_scrips_styles");
 
 function ap_ls_add_scrips_styles() {
 	        wp_enqueue_script("live-cricket-score",plugins_url("cricket-live-scores-wp-plugin/static/js/live_cricket_score.js"),array("jquery"));
+		wp_enqueue_style("live-cricket-score",plugins_url("cricket-live-scores-wp-plugin/static/css/style.css"));
 }
 
 
@@ -43,7 +44,7 @@ class ap_livefeeds extends WP_Widget
 
                 extract($args);
                 echo $before_widget;
-                echo $before_title."Cricket Live Feeds".$after_title;
+                echo $before_title.$after_title;
                 echo "<div class='cricket-live-feeds-ap-plugin'></div>";
                 echo $after_widget;
         }
