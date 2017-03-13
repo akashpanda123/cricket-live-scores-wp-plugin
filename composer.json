@@ -1,0 +1,38 @@
+{
+    "name": "mint/cricketScore",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "lib/"
+        },
+        "classmap": [
+            "vendor",
+            "lib"
+        ],
+        "files": [
+        ]
+    },
+    "config": {
+       "secure-http": false
+    },
+    "repositories": {
+        "packagist": false,
+        "yaml":{
+                "type": "package",
+                "package": {
+                        "name": "yaml",
+                        "version" : "v1.0.0",
+                        "source": {
+                                "url": "https://github.com/symfony/yaml.git",
+                                "type": "git",
+                                "reference": "origin/master"
+                        }
+                }
+        }
+    },
+    "require": {
+        "yaml": "v1.0.0"
+    }
+
+
+}
