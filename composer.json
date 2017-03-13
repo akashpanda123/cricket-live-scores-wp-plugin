@@ -14,25 +14,5 @@
     },
     "config": {
        "secure-http": false
-    },
-    "repositories": {
-        "packagist": false,
-        "yaml":{
-                "type": "package",
-                "package": {
-                        "name": "yaml",
-                        "version" : "v1.0.0",
-                        "source": {
-                                "url": "https://github.com/symfony/yaml.git",
-                                "type": "git",
-                                "reference": "refs/tags/v3.2.6"
-                        }
-                }
-        }
-    },
-    "require": {
-        "yaml": "v1.0.0"
     }
-
-
 }

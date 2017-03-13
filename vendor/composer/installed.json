@@ -1,14 +1,1 @@
-[
-    {
-        "name": "yaml",
-        "version": "v1.0.0",
-        "version_normalized": "1.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/yaml.git",
-            "reference": "refs/tags/v3.2.6"
-        },
-        "type": "library",
-        "installation-source": "source"
-    }
-]
+[]
