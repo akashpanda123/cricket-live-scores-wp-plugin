@@ -6,6 +6,12 @@
    Author URI: http:/akashpanda.com/
  */
 
+add_action("wp_enqueue_scripts" , "ap_ls_add_scrips_styles");
+
+function ap_ls_add_scrips_styles() {
+	        wp_enqueue_script("live-cricket-score",plugins_url("cricket-live-scores-wp-plugin/static/js/live_cricket_score.js"),array("jquery"));
+}
+
 
 class ap_livefeeds extends WP_Widget
 {
@@ -15,7 +21,7 @@ class ap_livefeeds extends WP_Widget
                                 "classname"=>"acs_widget",
                                 "description"=>"Widget to show live cricket score akashpanda."
                            );
-                parent::WP_Widget("ap_livefeeds","Akashpanda",$args);
+                parent::WP_Widget("ap_livefeeds","Cricket Live Feeds",$args);
         }
         function widget($args,$instance)
         {
@@ -37,23 +43,23 @@ class ap_livefeeds extends WP_Widget
 
                 extract($args);
                 echo $before_widget;
-                echo $before_title."Cricket Live Scores".$after_title;
-                echo "<div class='cricket-live-score-div-akashpanda-plugin'></div>";
+                echo $before_title."Cricket Live Feeds".$after_title;
+                echo "<div class='cricket-live-feeds-ap-plugin'></div>";
                 echo $after_widget;
         }
 }
 
-function akashpanda_ls_reg_widget()
+function ap_ls_reg_widget()
 {
-        register_widget("akashpanda_ls_cricket_score");
+        register_widget("ap_livefeeds");
 }
 
-add_action("widgets_init",'akashpanda_ls_reg_widget');
-add_action("wp_head",'akashpanda_ls_add_ajax_url');
+add_action("widgets_init",'ap_ls_reg_widget');
+add_action("wp_head",'ap_ls_add_ajax_url');
 
-function akashpanda_ls_add_ajax_url()
+function ap_ls_add_ajax_url()
 {
                 echo "<script> 
-                      var akashpannda_ls_ajaxURL='".plugins_url("cricket-live-feeds-plugin/fetch-data.php")."';
+                      var ap_ls_ajaxURL='".plugins_url("cricket-live-scores-wp-plugin/fetch-data.php?page=home")."';
                      </script>";
 }
